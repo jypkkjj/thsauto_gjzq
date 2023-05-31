@@ -27,7 +27,9 @@ http://192.168.0.116:5000/thsauto/client/kill
 - 重启同花顺客户端  
 http://192.168.0.116:5000/thsauto/client/restart  
 
+[下单客户端地址](https://www.gjzq.com.cn/main/download.html)
 
+示范：
 ```
 from thsauto import ThsAuto
 auto = ThsAuto()
