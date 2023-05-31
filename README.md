@@ -26,3 +26,24 @@ http://192.168.0.116:5000/thsauto/cancel?entrust_no=2060704404
 http://192.168.0.116:5000/thsauto/client/kill  
 - 重启同花顺客户端  
 http://192.168.0.116:5000/thsauto/client/restart  
+
+
+```
+from thsauto import ThsAuto
+auto = ThsAuto()
+auto.bind_client()
+#获取持仓
+print(auto. get_position())
+#获取账户信息
+print(auto.get_balance())
+#下买单
+auto.buy(‘601288’, 100, 5.00):
+#下卖单
+auto.sell(‘601288’, 100, 5.00):
+下单成功后会返回委托编号供撤单使用
+#撤单
+auto.cancel("下单返回的委托编号")
+
+
+print("Hello, World!");
+```
